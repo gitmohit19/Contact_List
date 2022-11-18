@@ -1,0 +1,16 @@
+.home-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.data{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    column-gap: 10px;
+}
