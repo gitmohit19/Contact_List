@@ -11,6 +11,7 @@ function Home() {
     id: index,
     avatar: faker.image.avatar(),
     randomName: faker.name.fullName(),
+    randomMobile: process.env.REACT_APP_SECRET_KEY,
     randomNum:Math.floor(100000000 + Math.random() * 9000000000)
   }));
 
@@ -22,7 +23,11 @@ function Home() {
         <div className="post " key={posts[i].id}>
           <img src={posts[i].avatar} alt="contact img"/>
           <h5>{`${posts[i].randomName}`}</h5>
-          <h5>{`${posts[i].randomNum}`}</h5>
+          <span>
+          <h6>{`${posts[i].randomMobile}`}</h6>
+          <p>{`${posts[i].randomNum}`}</p>
+
+          </span>
         </div>
       );
     }

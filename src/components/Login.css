@@ -3,6 +3,7 @@
   display: flex;
   margin: 50px;
   padding: 50px;
+  justify-content: center;
 }
 @media screen and (max-width: 1280px) {
   .forms-group{
